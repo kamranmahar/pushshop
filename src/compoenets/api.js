@@ -6,7 +6,7 @@ export function getShoesData(){
         let item = {
             slug:slug,name:name,img:img,desc:desc
         }
-        returnItems.push(item);
+      return  returnItems.push(item);
     });
   
     return returnItems;
