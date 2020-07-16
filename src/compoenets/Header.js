@@ -4,7 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
+import { Routes,Route,Link} from 'react-router-dom';
 import Home from './Home';
 import Products from './Products';
 import ShopIndex from './ShopIndex';

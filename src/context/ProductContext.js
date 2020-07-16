@@ -10,7 +10,7 @@ const ProductProvider = (props) => {
     useEffect(() => {
         const fetchApi = () => {
           setProducts(getShoesData());
-          console.log(products);
+          //console.log(products);
         }
     //console.log(dailyData); // 
     fetchApi();

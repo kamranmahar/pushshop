@@ -1,14 +1,9 @@
-import React , {useState,useEffect, useContext} from 'react';
+import React , { useContext} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
-import Footer from './Footer';
-import { getShoesData } from  './api';
-import { Outlet } from 'react-router';
-import ProductDetails from './ProductDetails';
-import { BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 import { Card, CardActionArea, CardMedia, CardContent, Button, CardActions } from '@material-ui/core';
 import { ProductContext } from  '../context/ProductContext';

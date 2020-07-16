@@ -1,11 +1,10 @@
-import React , {useState,useEffect} from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import Footer from './Footer';
-import { getShoesData } from  './api';
 import { Outlet } from 'react-router';
 
 const  image="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80";
@@ -77,25 +76,3 @@ export default function Products() {
       </React.Fragment>
     );
 }
-
-function ShopIndex(){
-  const [products,setProducts]= useState([]);
-
-        useEffect(() => {
-            const fetchApi = () => {
-              setProducts(getShoesData());
-            }
-        //console.log(dailyData);
-        fetchApi();
-        }, [setProducts]);
-
-        return (
-          <div>
-            test
-          
-          // { products.map((item) => <ul><li>item.title</li></ul>) }
-            </div>
-          
-        ); 
-
-        }
