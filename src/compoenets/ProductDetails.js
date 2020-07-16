@@ -82,7 +82,7 @@ export default function ProductDetails() {
     fetchApi();
     }, [setProducts]);
    // console.log(products);
-    let shoe = products.find(obj => obj.slug == slug);
+    let shoe = products.find(obj => obj.slug === slug);
   //  console.log(shoe);
     if(!shoe)
     {return (
