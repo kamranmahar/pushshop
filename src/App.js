@@ -1,18 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
-import Home from './compoenets/Home';
-import Products from './compoenets/Products';
-import Header from './compoenets/Header';
+import { BrowserRouter as Router} from 'react-router-dom';
 
+import Header from './compoenets/Header';
+import { ProductProvider } from './context/ProductContext';
 
 
 function App() {
   return (
-  
-    
   <Router>
+    <ProductProvider>
     <Header></Header>
-     
+    </ProductProvider>
   
    </Router>
   );

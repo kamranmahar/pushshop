@@ -8,6 +8,9 @@ import { BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
 import Home from './Home';
 import Products from './Products';
 import ShopIndex from './ShopIndex';
+import ProductDetails from './ProductDetails';
+import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
+
 const useStyles = makeStyles((theme) => ({
   toolbar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
@@ -62,7 +65,8 @@ export default function Header() {
         
         </IconButton>
         <Button variant="outlined" size="small">
-          Sign up
+          <ShoppingCartRoundedIcon  ></ShoppingCartRoundedIcon>
+          10
         </Button>
       </Toolbar>
       <Toolbar className={classes.toolbar}>
@@ -94,6 +98,7 @@ export default function Header() {
      <Route path="/" element={<Home />} ></Route>
      <Route path="/Products" element={<Products /> } > 
         <Route path="/" element={<ShopIndex />} ></Route>
+        <Route path=":slug" element={<ProductDetails />} ></Route>
      </Route>
    </Routes>
       

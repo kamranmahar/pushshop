@@ -3,7 +3,7 @@ export function getShoesData(){
     let returnItems =[];
     Object.entries(shoes).map(([slug,{name,img,desc}])=> {
         console.log(slug,name,img,desc);
-        let item ={
+        let item = {
             slug:slug,name:name,img:img,desc:desc
         }
         returnItems.push(item);
